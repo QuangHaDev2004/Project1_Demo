@@ -78,6 +78,13 @@ p {
   text-transform: capitalize;
 }
 
+@media (max-width: 575.98px) {
+  .custom-title {
+    font-size: 24px;
+    line-height: 30px;
+  } 
+}
+
 /* End Title */
 
 /* Button */
@@ -141,6 +148,12 @@ p {
   padding: 10px;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 575.98px) {
+  .socials {
+    display: none;
+  }
 }
 
 /* End Socials fixed */
@@ -284,6 +297,16 @@ p {
 
 .custom-list-tour .custom-tour-item {
   width: calc(100%/4 - 16px);
+}
+
+@media (max-width: 575.98px) {
+  .custom-list-tour {
+    gap: 16px;
+  }
+
+  .custom-list-tour .custom-tour-item {
+    width: calc(100%/2 - 8px);
+  } 
 }
 
 /* End Custom List Tour */
