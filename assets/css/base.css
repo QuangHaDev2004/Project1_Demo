@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+  --color-one: #4502C7;
+  --color-two: #DA0808;
+  --color-text: #25282B;
+  --color-text-two: #8C8C8C;
+  --font: "Lexend Deca", serif;
+}
+
+body {
+  font-family: var(--font);
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1184px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.container-md {
+  max-width: 768px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Custom logo */
+.custom-logo {
+  text-transform: uppercase;
+  color: var(--color-one);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* End custom logo */
+
+/* Title */
+.custom-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  color: var(--color-one);
+  text-transform: capitalize;
+}
+
+/* End Title */
+
+/* Button */
+.btn-search {
+  height: 58px;
+  background-color: var(--color-one);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  box-shadow: 0px 3.3px 3.3px 0px #00000040;
+  border-radius: 10px;
+  padding: 0 14px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.btn-search i {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.btn-main {
+  text-align: center;
+}
+
+.btn-main a {
+  border: 2px solid #4502C7;
+  color: var(--color-one);
+  display: inline-block;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 12px 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-main a:hover {
+  background-color: var(--color-one);
+  border-color: var(--color-one);
+  color: #fff;
+}
+
+/*End  Button */
+
+/* Socials fixed */
+.socials {
+  background-color: var(--color-one);
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 10px;
+  position: fixed;
+  right: 12px;
+  bottom: 18px;
+  box-shadow: 0px 2px 4px 0px #00000026;
+}
+
+.socials a {
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* End Socials fixed */
+
+/* Item Tours */
+.custom-tour-item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(100%/3);
+  box-shadow: 0px 2.38px 2.38px 0px #00000040;
+  position: relative;
+  z-index: 1;
+}
+
+.custom-tour-item img {
+  margin-top: -2px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.custom-tour-item .tour-content {
+  padding: 16px 14px;
+  position: relative;
+}
+
+.custom-tour-item .tour-discount {
+  background-color: var(--color-two);
+  color: #F9F9FA;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 12px 2px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 15px;
+  text-transform: uppercase;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  position: absolute;
+  left: 0;
+  top: -15px;
+}
+
+.custom-tour-item .tour-discount i {
+  color: #FFD600;
+}
+
+.custom-tour-item .tour-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  color: var(--color-text);
+  text-transform: capitalize;
+  min-height: 36px;
+}
+
+.custom-tour-item .tour-price {
+  margin: 8px 0;
+  display: flex;
+  gap: 16px;
+}
+
+.custom-tour-item .tour-price .price-old {
+  color: #52575C;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 600;
+  text-decoration: line-through;
+}
+
+.custom-tour-item .tour-price .price-new {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  color: var(--color-two);
+}
+
+.custom-tour-item .tour-price span {
+  text-decoration: underline;
+}
+
+.custom-tour-item .tour-detail,
+.custom-tour-item .list-stars span {
+  color: #8C8C8C;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.custom-tour-item .tour-detail p {
+  margin-bottom: 4px;
+}
+
+.custom-tour-item .tour-detail span {
+  font-weight: 700;
+}
+
+.custom-tour-item .list-stars i {
+  color: #FFD600;
+  font-size: 12px;
+}
+
+.custom-tour-item .tour-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.custom-tour-item .quantity-seats {
+  color: var(--color-text);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.custom-tour-item .box-number {
+  background-color: var(--color-two);
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+/* End Item Tours */
+
+/* Custom List Tour */
+.custom-list-tour {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+}
+
+.custom-list-tour .custom-tour-item {
+  width: calc(100%/4 - 16px);
+}
+
+/* End Custom List Tour */
